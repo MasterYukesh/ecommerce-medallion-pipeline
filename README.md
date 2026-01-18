@@ -66,16 +66,16 @@ docker compose up airflow-init
 docker compose up
 ```
 Open UI:
-  http://localhost:8080
-  airflow / airflow
+    a. http://localhost:8080
+    b. airflow / airflow
 
-2. Configure Databricks Connection
+### 2. Configure Databricks Connection
 
 In Airflow UI:
 Admin → Connections → Databricks
 Add connection with your workspace URL and token.
 
-3. Trigger Pipeline
+### 3. Trigger Pipeline
 Turn on the DAG → Trigger manually → Observe sequential run.
 
 🧠 How to Use Databricks Notebooks
@@ -89,17 +89,18 @@ gold_aggregation.py: Create analytics-ready tables
 
 You can import these as notebooks or jobs in Databricks.
 
-📈 Future Enhancements
-Slack alerts / webhook notifications
+### 📈 Future Enhancements
+✔ Slack alerts / webhook notifications
 
-Runtime metrics logging
+✔ Runtime metrics logging
 
-Parameterized pipelines (e.g., date partitions)
+✔ Parameterized pipelines (e.g., date partitions)
 
-Data quality framework (dbt, Great Expectations)
+✔ Data quality framework (dbt, Great Expectations)
 
 👨‍💻 Author
 Yukeshwaran 
 Data Engineer | Spark | Databricks | Airflow | SQL
+
 LinkedIn: https://www.linkedin.com/in/MasterYukesh/
 GitHub: https://github.com/MasterYukesh
