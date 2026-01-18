@@ -58,26 +58,20 @@ ecommerce-medallion-pipeline/
 
 ## 📌 Getting Started — Airflow
 
+
 ### 1. Start Airflow
 ```bash
 cd airflow
 docker compose up airflow-init
 docker compose up
+```
 Open UI:
+  http://localhost:8080
+  airflow / airflow
 
-arduino
-Copy code
-http://localhost:8080
-Login:
-
-nginx
-Copy code
-airflow / airflow
 2. Configure Databricks Connection
-In Airflow UI:
 
-nginx
-Copy code
+In Airflow UI:
 Admin → Connections → Databricks
 Add connection with your workspace URL and token.
 
@@ -105,7 +99,7 @@ Parameterized pipelines (e.g., date partitions)
 Data quality framework (dbt, Great Expectations)
 
 👨‍💻 Author
-Yukeswaran
+Yukeshwaran 
 Data Engineer | Spark | Databricks | Airflow | SQL
 LinkedIn: https://www.linkedin.com/in/MasterYukesh/
 GitHub: https://github.com/MasterYukesh
