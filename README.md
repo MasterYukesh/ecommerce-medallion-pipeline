@@ -54,6 +54,26 @@ ecommerce-medallion-pipeline/
 ✔ Failure alerts via email  
 ✔ Data quality validations in notebooks
 
+graph TD
+    %% Define Nodes
+    A[/CSV Files/]
+    B[(Bronze Layer: Raw Data)]
+    C[(Silver Layer: Cleaned + SCD2)]
+    D[(Gold Layer: Analytics Ready)]
+    E[Airflow Dashboard]
+
+    %% Define Flow
+    A -->|Ingest| B
+    B -->|Transform & Historize| C
+    C -->|Aggregate & Model| D
+    D -->|Monitor & Visualize| E
+
+    %% Styling
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#cd7f32,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#c0c0c0,stroke:#333,stroke-width:2px
+    style D fill:#ffd700,stroke:#333,stroke-width:2px
+    style E fill:#6495ed,stroke:#333,stroke-width:2px,color:#fff
 ---
 
 ## 📌 Getting Started — Airflow
