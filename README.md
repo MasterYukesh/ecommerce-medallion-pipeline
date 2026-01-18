@@ -81,11 +81,11 @@ Turn on the DAG → Trigger manually → Observe sequential run.
 🧠 How to Use Databricks Notebooks
 Each Python file under /databricks represents stage logic:
 
-bronze_ingestion.py: Ingest raw data & add metadata
+- *bronze_ingestion.py*: Ingest raw data & add metadata
 
-silver_transform.py: Clean, deduplicate, apply SCD2
+- *silver_transform.py*: Clean, deduplicate, apply SCD2
 
-gold_aggregation.py: Create analytics-ready tables
+- *gold_aggregation.py*: Create analytics-ready tables
 
 You can import these as notebooks or jobs in Databricks.
 
